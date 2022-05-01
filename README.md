@@ -2,7 +2,7 @@
 
 用于记录自己的刷题路径，主要语言Python、C++。
 
-大三学生，Coding for fun。
+大三学生，Coding for fun。希望可以做到每日更新。
 
 
 ## Question List
