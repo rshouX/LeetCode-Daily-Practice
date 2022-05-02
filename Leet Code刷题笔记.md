@@ -126,7 +126,7 @@ def removeDuplicates(nums):
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2skh7/
 
-```
+```python
 def rotate(self, nums, k):
     k %= len(nums)
     items = nums[:-k]
@@ -143,7 +143,7 @@ def rotate(self, nums, k):
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x248f5/
 
-```
+```python
 def containsDuplicate(self, nums):
     hashmap = {}
     for i, e in enumerate(nums):
@@ -164,7 +164,7 @@ def containsDuplicate(self, nums):
 来源：力扣 (LeetCode)
 链接：https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x21ib6/
 
-```
+```python
 def singleNumber(self, nums):
     ans = 0
     for i in nums: ans ^= i
