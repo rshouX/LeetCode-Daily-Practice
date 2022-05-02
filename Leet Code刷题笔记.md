@@ -8,6 +8,9 @@
   * [删除数组中的重复项](#删除数组中的重复项)
     + [贪心算法](#贪心算法)
     + [双指针](#双指针)
+  * [旋转数组](#旋转数组)
+  * [存在重复元素](#存在重复元素)
+  * [只出现一次的数字](#只出现一次的数字)
 
 ## 两数之和
 
@@ -99,6 +102,8 @@ def smallestRangeI(nums, k):
 
 ### 贪心算法
 
+
+
 ```python
 def removeDuplicates(nums):
     lens = len(nums)
@@ -112,3 +117,70 @@ def removeDuplicates(nums):
 执行时间24ms。
 
 ### 双指针
+
+## 旋转数组
+
+
+给你一个数组，将数组中的元素向右轮转 k 个位置，其中 k 是非负数。
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x2skh7/
+
+```
+def rotate(self, nums, k):
+    k %= len(nums)
+    items = nums[:-k]
+    nums[:-k] = []
+    nums.extend(items)
+    return nums
+```
+
+## 存在重复元素
+
+给你一个整数数组 nums 。如果任一值在数组中出现 至少两次 ，返回 true ；如果数组中每个元素互不相同，返回 false 。
+
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x248f5/
+
+```
+def containsDuplicate(self, nums):
+    hashmap = {}
+    for i, e in enumerate(nums):
+        if e in hashmap: return True
+        hashmap[e] = i
+    return False
+```
+
+## 只出现一次的数字
+
+给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。
+
+说明：
+
+你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？
+
+
+来源：力扣 (LeetCode)
+链接：https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/x21ib6/
+
+```
+def singleNumber(self, nums):
+    ans = 0
+    for i in nums: ans ^= i
+    return ans
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
