@@ -6,7 +6,7 @@
 
 
 ## Question List
-《初级算法》https://leetcode-cn.com/leetbook/read/top-interview-questions-easy/xn8fsh/
+《初级算法》https://leetcode-cn.com/leetbook/detail/top-interview-questions-easy/
 
 《中级算法》https://leetcode-cn.com/leetbook/detail/top-interview-questions-medium/
 
